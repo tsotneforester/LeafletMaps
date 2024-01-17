@@ -3,10 +3,23 @@
 ![leaf](https://github.com/tsotneforester/LeafletMaps/assets/79293287/16a94f93-ce38-4381-a7a1-c026541880ce)
 
 <div align="center">
+Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
+  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" /> <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" /> <br/>
  <a href="https://tsotneforester.github.io/LeafletMaps/" target="_blank">🖥️ View Demo</a> · 
 <a href="https://github.com/tsotneforester/LeafletMaps/issues">🛠 Submit Issue</a>
 
 </div>
+
+# about
+
+_**Leaflet Maps**_ packs main and common features that every customized map has:
+
+- Markers
+- Circles
+- Polygons
+- Popups
+
+if suddelny [leaflet](https://leafletjs.com/) documentray seems hard to understend, you will benefit from this project
 
 <!-- |||||||||||||| Heading |||||||||||||    -->
 <!-- # About The Project -->
