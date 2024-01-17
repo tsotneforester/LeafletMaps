@@ -1,7 +1,7 @@
 import { osm_street, osm_topo, esri_satelite } from "./layers/maps.js";
 import { regions } from "./layers/regions.js";
 import { national_parks } from "./layers/national_parks.js";
-import { holy } from "./layers/holy.js";
+import { holly } from "./layers/holly.js";
 
 let map = L.map("mapid", {
   // drawControl: true,
@@ -20,7 +20,7 @@ let map = L.map("mapid", {
   fullscreenControl: true,
   center: [42.2955, 43.69],
   zoom: 7,
-  maxZoom: 9,
+  maxZoom: 11,
   minZoom: 7,
   // maxBounds: mybounds,
   layers: [osm_street, regions],
@@ -54,12 +54,10 @@ map.on("zoomend", function () {
 
 map.on("zoomend", function () {
   let z = map.getZoom();
-  if (z > 9) {
-    return holy.remove();
-  } else if (z < 9) {
-    return holy.remove();
+  if (z < 9) {
+    return holly.remove();
   } else {
-    holy.addTo(map);
+    holly.addTo(map);
   }
 });
 

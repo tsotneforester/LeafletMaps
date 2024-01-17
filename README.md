@@ -12,10 +12,9 @@ Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" 
 
 # about
 
-_**Leaflet Maps**_ packs main and common features that every customized map has:
+_**Leaflet Maps**_ packs main and common features that every customized map has and every GIS specialist knows:
 
-- Markers
-- Circles
+- Points (Markers, Circles)
 - Polygons
 - Popups
 
