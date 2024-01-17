@@ -3,8 +3,7 @@
 ![leaf](https://github.com/tsotneforester/LeafletMaps/assets/79293287/16a94f93-ce38-4381-a7a1-c026541880ce)
 
 <div align="center">
- <a href="https://tsotneforester.github.io/LeafletMaps/" target="_blank">🖥️ View Demo</a>
-
+ <a href="https://tsotneforester.github.io/LeafletMaps/" target="_blank">🖥️ View Demo</a> · 
 <a href="https://github.com/tsotneforester/LeafletMaps/issues">🛠 Submit Issue</a>
 
 </div>
