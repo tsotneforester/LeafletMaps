@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100svh;
+}
+
+#mapid {
+  z-index: 100;
+  height: 100%;
+
+}
