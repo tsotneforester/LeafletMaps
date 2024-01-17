@@ -1,12 +1,16 @@
+<h1 align="center"> Leaflet Maps </h1>
 
 ![leaf](https://github.com/tsotneforester/LeafletMaps/assets/79293287/16a94f93-ce38-4381-a7a1-c026541880ce)
 
-[Demo](https://tsotneforester.github.io/LeafletMaps/)
+<div align="center">
+ <a href="https://tsotneforester.github.io/LeafletMaps/" target="_blank">🖥️ View Demo</a>
 
+<a href="https://github.com/tsotneforester/LeafletMaps/issues">🛠 Submit Issue</a>
+
+</div>
 
 <!-- |||||||||||||| Heading |||||||||||||    -->
 <!-- # About The Project -->
-<!--<h1 align="center"> About The Project </h1> -->
 
 <!-- |||||||||||||| Emphesize --|||||||||||||| -->
 <!-- **bold** / **bold** / <strong>bold</strong> -->
@@ -54,10 +58,6 @@ const hello= "hello";
 <!----------------------- Back To Top -------------------------------->
 <!-- <a name="readme-top"></a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsotneforester&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Top Langs](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tsotneforester&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
 
 <!----------------------- Links -------------------------------->
 <!-- https://readme-typing-svg.demolab.com/demo/ -->
