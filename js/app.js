@@ -2,6 +2,7 @@ import { osm_street, osm_topo, esri_satelite } from "./layers/maps.js";
 import { regions } from "./layers/regions.js";
 import { national_parks } from "./layers/national_parks.js";
 import { holly } from "./layers/holly.js";
+import { tracks } from "./layers/tracks.js";
 
 let map = L.map("mapid", {
   // drawControl: true,
@@ -54,10 +55,19 @@ map.on("zoomend", function () {
 
 map.on("zoomend", function () {
   let z = map.getZoom();
-  if (z < 9) {
+  if (z < 10) {
     return holly.remove();
   } else {
     holly.addTo(map);
+  }
+});
+
+map.on("zoomend", function () {
+  let z = map.getZoom();
+  if (z < 9) {
+    return tracks.remove();
+  } else {
+    tracks.addTo(map);
   }
 });
 

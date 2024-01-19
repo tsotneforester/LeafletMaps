@@ -48,7 +48,7 @@ let geojsonLayer = L.geoJSON(holly_geojson, {
         case "ruins":
           return L.marker(latlng, { icon: blackRuins });
         case "castle":
-          return L.marker(latlng, { icon: cyanCastle });
+          return L.circleMarker(latlng, { ...styles, color: "#0000FF", fillColor: "#0000FF" });
         case "monastery":
           return L.marker(latlng, { icon: cyanMonastery });
         default:
