@@ -17,6 +17,7 @@ _**Leaflet Maps**_ packs main and common features that every customized map has 
 - Points (Markers, Circles)
 - Polygons
 - Popups
+- Geojson
 
 if suddelny [leaflet](https://leafletjs.com/) documentray seems hard to understend, you will benefit from this project.
 

@@ -1,8 +1,9 @@
-import { regions_geojson } from "../geojson/regions.js";
+
+import regions_geojson from "../geojson/regions.json" assert { type: "json" };
 
 let styledRegions = L.geoJson(regions_geojson, {
   style: function (feature) {
-    switch (feature.properties.NAME_1) {
+    switch (feature.properties.name_en) {
       case "Abkhazia":
         return {
           color: "red",
@@ -114,9 +115,7 @@ let styledRegions = L.geoJson(regions_geojson, {
 });
 
 styledRegions.eachLayer(function (layer) {
-  layer.bindTooltip(layer.feature.properties.NAME_1);
+  layer.bindTooltip(layer.feature.properties.name_ka);
 });
 
-export let regions = L.layerGroup([styledRegions], {
-  minZoom: 7,
-});
+export let regions = L.layerGroup([styledRegions]);

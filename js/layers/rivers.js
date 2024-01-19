@@ -1,4 +1,4 @@
-import tracks_geojson from "../geojson/tracks.json" assert { type: "json" };
+import rivers_geojson from "../geojson/rivers.json" assert { type: "json" };
 //fully compatible with QGIS jeojson
 
 let styles = {
@@ -11,7 +11,7 @@ let styles = {
   offset: 3,
 };
 
-export let tracks = L.geoJson([tracks_geojson], {
+export let rivers = L.geoJson([rivers_geojson], {
   style: function (feature) {
     switch (true) {
       case feature.properties.len >= 40:
@@ -36,10 +36,10 @@ export let tracks = L.geoJson([tracks_geojson], {
   },
 });
 
-// tracks.eachLayer(function (layer) {
+// rivers.eachLayer(function (layer) {
 //   layer.bindPopup("layer.feature.properties.name");
 // });
 
-tracks.eachLayer(function (layer) {
+rivers.eachLayer(function (layer) {
   layer.bindTooltip(layer.feature.properties.name);
 });

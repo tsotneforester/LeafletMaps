@@ -1,8 +1,7 @@
 import { osm_street, osm_topo, esri_satelite } from "./layers/maps.js";
 import { regions } from "./layers/regions.js";
-import { national_parks } from "./layers/national_parks.js";
 import { holly } from "./layers/holly.js";
-import { tracks } from "./layers/tracks.js";
+import { rivers } from "./layers/rivers.js";
 
 let map = L.map("mapid", {
   // drawControl: true,
@@ -20,9 +19,9 @@ let map = L.map("mapid", {
   zoomControl: true,
   fullscreenControl: true,
   center: [42.2955, 43.69],
-  zoom: 7,
-  maxZoom: 11,
-  minZoom: 7,
+  zoom: 8,
+  maxZoom: 10,
+  minZoom: 8,
   // maxBounds: mybounds,
   layers: [osm_street, regions],
 });
@@ -33,20 +32,13 @@ var mainlayer = {
   "Esri Satelite": esri_satelite,
 };
 
-map.on("zoomend", function () {
-  let z = map.getZoom();
-  if (z > 8) {
-    return national_parks.remove();
-  } else if (z < 8) {
-    return national_parks.remove();
-  } else {
-    national_parks.addTo(map);
-  }
+map.on("zoom", function () {
+console.log(map.getZoom());
 });
 
 map.on("zoomend", function () {
   let z = map.getZoom();
-  if (z < 8) {
+  if (z == 8) {
     return regions.addTo(map);
   } else {
     regions.remove();
@@ -55,21 +47,23 @@ map.on("zoomend", function () {
 
 map.on("zoomend", function () {
   let z = map.getZoom();
-  if (z < 10) {
-    return holly.remove();
+  if (z == 9) {
+    return rivers.addTo(map);
   } else {
-    holly.addTo(map);
+    rivers.remove();
   }
 });
 
+
 map.on("zoomend", function () {
   let z = map.getZoom();
-  if (z < 9) {
-    return tracks.remove();
+  if (z == 10) {
+    return holly.addTo(map);
   } else {
-    tracks.addTo(map);
+    holly.remove();
   }
 });
+
 
 L.control
   .layers(mainlayer, {
