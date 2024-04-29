@@ -19,6 +19,6 @@ _**Leaflet Maps**_ packs main and common features that every customized map has 
 - Popups
 - Geojson
 
-if suddelny [leaflet](https://leafletjs.com/) documentray seems hard to understend, you will benefit from this project.
+if suddelny [leaflet](https://leafletjs.com/) documentray seems hard to understend, you will benefit from this project!
 
 <!-- # Points are handled differently than polylines and polygons. By default simple markers are drawn for GeoJSON Points. We can alter this by passing a pointToLayer function in a GeoJSON options object when creating the GeoJSON layer. -->
