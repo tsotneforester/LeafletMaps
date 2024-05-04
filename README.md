@@ -5,7 +5,7 @@
 <div align="center">
 Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" /> <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" /> <br/>
- <a href="https://gpx.ge/js/pages/1013_leaflet_maps/" target="_blank">🖥️ View Demo</a> · 
+ <a href="https://dreamy-lokum-3a61a0.netlify.app/" target="_blank">🖥️ View Demo</a> · 
 <a href="https://github.com/tsotneforester/LeafletMaps/issues">🛠 Submit Issue</a>
 
 </div>
