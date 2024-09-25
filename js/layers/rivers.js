@@ -1,5 +1,4 @@
-import rivers_geojson from "../geojson/rivers.json" assert { type: "json" };
-//fully compatible with QGIS jeojson
+import rivers_geojson from "../geojson/rivers.js";
 
 let styles = {
   weight: 3,

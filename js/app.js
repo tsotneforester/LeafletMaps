@@ -1,7 +1,7 @@
 import { osm_street, osm_topo, esri_satelite } from "./layers/maps.js";
 import { regions } from "./layers/regions.js";
 import { holly } from "./layers/holly.js";
-import { rivers } from "./layers/rivers.js";
+ import { rivers } from "./layers/rivers.js";
 
 let map = L.map("mapid", {
   // drawControl: true,
@@ -33,7 +33,7 @@ var mainlayer = {
 };
 
 map.on("zoom", function () {
-console.log(map.getZoom());
+  console.log(map.getZoom());
 });
 
 map.on("zoomend", function () {
@@ -54,7 +54,6 @@ map.on("zoomend", function () {
   }
 });
 
-
 map.on("zoomend", function () {
   let z = map.getZoom();
   if (z == 10) {
@@ -63,7 +62,6 @@ map.on("zoomend", function () {
     holly.remove();
   }
 });
-
 
 L.control
   .layers(mainlayer, {

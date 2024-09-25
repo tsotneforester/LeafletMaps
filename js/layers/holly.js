@@ -1,5 +1,4 @@
-import holly_geojson from "../geojson/holly.json" assert { type: "json" };
-//fully compatible with QGIS jeojson
+import holly_geojson from "../geojson/holly.js";
 
 let styles = {
   radius: 4,

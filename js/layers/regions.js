@@ -1,5 +1,6 @@
+import regions_geojson from "../geojson/regions.js";
 
-import regions_geojson from "../geojson/regions.json" assert { type: "json" };
+
 
 let styledRegions = L.geoJson(regions_geojson, {
   style: function (feature) {
