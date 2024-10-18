@@ -5,7 +5,7 @@
 <div align="center">
 Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" /> <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" /> <br/>
- <a href="https://leaflet-maps-gpxcript.netlify.app/" target="_blank">🖥️ View Demo</a> · 
+ <a href="https://leaflet-maps-geojsone.netlify.app/" target="_blank">🖥️ View Demo</a> · 
 <a href="https://github.com/tsotneforester/LeafletMaps/issues">🛠 Submit Issue</a>
 
 </div>
